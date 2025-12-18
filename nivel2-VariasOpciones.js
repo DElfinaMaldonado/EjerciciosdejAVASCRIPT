@@ -77,14 +77,14 @@ if (membresia == "Basica") {
 }
 
 //Te dan el índice de masa corporal (IMC) de una persona. Clasifícalo como: Bajo peso, Normal, Sobrepeso u Obesidad.
-var masa_corporal = 65;
+var masa_corporal = 35;
 if (masa_corporal >= 40) {
     console.log("Obesidad");
 } else if (masa_corporal >= 30) {
     console.log("Sobrepeso");
 } else if (masa_corporal >= 20) {
     console.log("Normal");
-} else if (masa_corporal < 19) {
+} else if (masa_corporal <=19) {
     console.log("Bajo Peso");
 }
 
@@ -148,15 +148,13 @@ switch (tipo_vehiculo) {
     case "bicicleta":
         console.log("El tipo de vehiculo es terrestre");
         break;
-    case "avion":
-    case "helicoptero":
-    case "bicicleta":
-        console.log("El tipo de vehiculo es aereo");
+    case "avión":
+    case "helicóptero":
+        console.log("El tipo de vehiculo es aéreo");
         break;
-    case "avion":
     case "barco":
     case "lancha":
-        console.log("El tipo de vehiculo es acuatico");
+        console.log("El tipo de vehiculo es acuático");
         break;
     default: console, log("El tipo de vehiculo no es reconocido");
 }

@@ -62,3 +62,17 @@ if( rol == "usuario registrado"){
 } else if (rol == "Administrador"){
     console.log("Planifica para lograr el objetivo del mes");
 }
+
+// Una aplicación de streaming reproduce contenido según la calidad de Internet: SD, HD, Full HD o 4K. Determina qué calidad mostrar según los Mbps disponibles.
+
+
+// En una cafetería, el precio final varía según el tamaño de bebida seleccionado: Chico, Mediano, Grande o Extra Grande. Calcula el precio correspondiente.
+
+
+// Un sistema de alertas de tráfico muestra diferentes mensajes según el nivel de congestionamiento: Fluido, Moderado, Pesado o Bloqueado.
+
+
+// Una aplicación de delivery cobra diferente tarifa según la distancia: Zona cercana, Zona media, Zona lejana o Fuera de cobertura.
+
+
+// Un sistema de acceso al edificio muestra diferentes mensajes según el tipo de credencial: Empleado, Visitante, Proveedor, Mantenimiento o Sin autorización.
