@@ -86,6 +86,81 @@ if (reservacion == "confirmada" && horario < 8) {
     console.log("No puede acceder a la sala VIP");
 }
 
-//Un sistema de seguridad permite el acceso si el código es correcto y la huella dactilar coincide. Válida si se otorga el acceso.
-// let codigo_correcto = 469;
-// let huella_dactilar = "";
+// 1. Un estudiante aprueba el curso si tiene promedio mayor o igual a 70 Y asistió al menos al 80% de las clases. Determina si aprueba.
+let promedio = 68;
+let asistencia = 90;
+if(promedio >= 70 && asistencia >= 80) {
+    console.log("Usted aprueba el curso");
+} else {
+    console.log("Usted no aprueba el curso");
+}
+
+// 2. Una tienda ofrece promoción 2x1 si es fin de semana O si el cliente cumple años ese día. Decide si aplica la promoción.
+let dia_de_la_semana = "Lunes";
+let cumpleaños = 'true';
+
+if(dia_de_la_semana == "Fin de semana" || cumpleaños == 'true') {
+    console.log("Cuenta con un promocion del 2 X 1");
+}
+
+// 3. Un sistema de alarma se activa si detecta movimiento Y es de noche (después de las 10 PM). Indica si la alarma se activa.
+let Turno = 'noche';
+let movimiento = "detectado"
+let tiempo  = 12;
+if (movimiento == 'detectado' && Turno == "noche" && tiempo > 10 ){
+    console.log("Sistema de alarma activado");
+}
+
+// 4. Te dan un número. Determina si es impar Y está entre 20 y 100 (inclusive).
+let numero = 45;
+if( numero % 2 != 0 && numero >= 20 && numero <= 100){
+    console.log("EL numero es impar y este se encuentra ente 20 y 100");
+}
+
+// 5. Un restaurante acepta reservaciones si hay mesas disponibles O si el cliente tiene membresía gold. Válida si se acepta la reservación.
+let mesas = "no disponibles";
+let membresia = "gold";
+if(mesas == "disponibles" || membresia == "gold") {
+    console.log("Se acepta la reservacion")
+}
+
+// 6. Para aprobar un examen de manejo, debes tener al menos 80 puntos en la prueba teórica Y no cometer más de 3 errores en la práctica. Determina si aprueba.
+let puntos = 75;
+let errores = 5;
+if(puntos >= 80 && errores <=3){
+    console.log("Apuebas el examen de manejo");
+} else {
+    console.log("No lo aprueba");
+}
+
+// 7. Un banco aprueba un préstamo si el ingreso mensual es mayor a $15,000 Y el historial crediticio es "bueno" O "excelente". Decide si se aprueba el préstamo.
+let ingreso_mensual = 16000;
+let historial_crediticio = "excelente";
+if(ingreso_mensual > 15000 && (historial_crediticio == "bueno" || historial_crediticio == "excelente")){
+    console.log("Se aprueba el prestamo");
+}
+
+// 8. Te dan la edad de una persona. Determina si es menor de edad (menor a 18) O es adulto mayor (mayor o igual a 65).
+let edad_persona= 45;
+if( edad_persona >= 65){
+    console.log("Es un adulto mayor");
+} else if (edad_persona < 18){
+    console.log("Es menor de edad");
+}
+
+// 9. Un gimnasio permite el acceso si tienes membresía activa Y tu último pago fue hace menos de 30 días. Indica si puede acceder.
+let membresias = "activa";
+let pago_dias = 18;
+if(membresias == "activa" && pago_dias < 30){
+    console.log("tiene acceso al gimnasio");
+} else {
+    console.log("No tiene acceso al gimnasio");
+}
+
+// 10. Para obtener una beca, el estudiante debe tener promedio mayor a 85 Y (tener bajos recursos O pertenecer a una minoría). Válida si obtiene la beca.
+let promedio_beca = 86;
+let situacion_economica = "Estable";
+let minoria = "true";
+if(promedio_beca > 85 && (situacion_economica == "Bajos recursos" || minoria == "true")){
+    console.log("Obtiene la beca");
+}
