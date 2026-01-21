@@ -177,3 +177,94 @@ if(bateria >= 10) {
 } else if (bateria < 10) {
     console.log("Su dispositivo tiene menos del 10 %, necesita cargarse");
 }
+
+
+
+// 1. Un cine ofrece descuento del 50% a niños menores de 12 años y adultos mayores de 65. Determina si una persona califica para descuento según su edad.
+let edad_descuento = 12;
+if(edad_descuento < 12 || edad_descuento  >= 65){
+    console.log("Usted cuenta con el 50% de descuento");
+} else {
+    console.log("No cuenta con el 50% de descuento");
+}
+
+// 2. Una piscina solo permite el acceso si la temperatura del agua está entre 24°C y 30°C. Verifica si está en condiciones para abrir.
+let temperatura_agua = 15;
+if(temperatura_agua >= 24 && temperatura <= 30){
+    console.log("Tiene acceso");
+}else {
+    console.log("No tiene acceso");
+}
+
+// 3. Un restaurante tiene capacidad para 80 personas y ya hay cierta cantidad de comensales. Llega un grupo de N personas. Determina si pueden entrar todos.
+// let cantidad_personas = 75;
+// if(cantidad_personas > 80){
+//     console.log("Todos puede entrar");
+// } else if (cantidad_personas <= 80){
+//     console.log("No peden entrar");
+// }
+let cantidad_de_comensales = 50;
+let c
+
+// 4. Una tarjeta de crédito tiene un límite de $50,000 y un saldo usado actual. Verifica si se puede realizar una compra de cierto monto.
+let limite_tarjeta = 50000;
+let saldo_actual = 25000;
+if(limite_tarjeta - saldo_actual){
+    console.log("Aun cuentas con dinero para realizar la compra");
+}else if (saldo_actual > limite_tarjeta){
+    console.log("Ya no cuenta con saldo actual para realizar la compra");
+}
+// 5. Un examen tiene 50 preguntas. Necesitas al menos 35 correctas para aprobar y 45 para obtener mención honorífica. Clasifica el resultado según respuestas correctas.
+let preguntas_correctas = 12;
+if(preguntas_correctas >= 45){
+    console.log("Felicidades tiene mencion honorifica");
+}else if(preguntas_correctas >= 35){
+    console.log("Felcidades apruebas");
+}else if(preguntas_correctas < 34){
+    console.log("Sigue esforzando");
+}
+
+// 6. Una planta necesita riego si la humedad de la tierra es menor al 40%. Determina si hay que regarla según el porcentaje actual.
+let humedad_tierra = 65;
+if(humedad_tierra < 40){
+    console.log("La planta necesita riego");
+}
+
+// 7. Un delivery de comida tarda 30 minutos si la distancia es menor a 3 km, o 50 minutos si es mayor. Indica el tiempo de entrega estimado.
+let distancia_comida = 2;
+if(distancia_comida >= 3){
+    console.log("Su comida tardara 50 minutos en ser entregada");
+}else if (distancia_comida < 3){
+    console.log("Su comida tardara 30 minutos en ser entregada");
+}
+
+// 8. Una persona quiere rentar un auto. Debe tener al menos 21 años y licencia vigente (antigüedad mínima de 2 años). Verifica si cumple los requisitos.
+let edad_auto = 21;
+let licencia_auto = 5;
+if(edad_auto >= 21 && licencia_auto <= 2){
+    console.log("Puede rentar su auto");
+}else {
+    console.log("No puede rentar su auto");
+}
+
+// 9. Un hotel cobra $800 por noche entre semana y $1,200 los fines de semana. Calcula el costo total según el día y las noches de estadía.
+// let dia_semana_hotel = "Lunes";
+// switch (dia_semana_hotel) {
+//     case "Lunes":
+//         case "Martes":
+//             case "Miercoles":
+//                 case "Jueves":
+//                     case "Viernes":
+//                         consonsole.log("El costo del hotel, es de $1,200");
+//                         break;
+//                         case
+
+// }
+
+// 10. Una tienda de mascotas solo vende perros de razas grandes a personas con jardín. Determina si puede realizarse la venta según el tipo de perro y si tiene jardín.
+let cuenta_con_jardin = "true";
+if(cuenta_con_jardin == "true"){
+    console.log("Queda autorizada la venta de un perro grande");
+}else if(cuenta_con_jardin == "false"){
+    console.log("Solo queda autoriza la venta de perros medianos o pequeños");
+}
