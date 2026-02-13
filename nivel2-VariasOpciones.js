@@ -101,7 +101,7 @@ switch (mes) {
         console.log("Marzo");
         break;
     case 4:
-        console.log("Abril");
+        console.log("Abril"); 
         break;
     case 5:
         console.log("Mayo");
@@ -308,4 +308,142 @@ if(videojuego >= 4000) {
     console.log("Plata");
 } else if (videojuego >= 0 && videojuego <= 999){
     console.log("Bronce");
+}
+
+
+// 1. Una aerolínea cobra según el peso del equipaje: Gratis (0-23kg), $500 (24-32kg), $1000 (33-50kg), No permitido (más de 50kg).
+let peso_equipaje = 15;
+if( peso_equipaje > 50){
+    console.log("No permitido");
+}else if(peso_equipaje >= 33 && peso_equipaje <= 50){
+    console.log("El costo es de $1000");
+}else if(peso_equipaje >=24 && peso_equipaje <= 32){
+    console.log("El peso del equipaje es de $500");
+}else if (peso_equipaje <= 23){
+    console.log("El precio del equipaje es gratis");
+}
+// 2. Un sistema de seguridad tiene niveles de acceso: Visitante (nivel 0), Empleado (nivel 1-2), Supervisor (nivel 3-4), Gerente (nivel 5-6), Director (nivel 7+).
+let nivel_de_acceso = 5;
+if(nivel_de_acceso >= 7){
+    console.log("Usted tiene un nivel de acceso de Director");
+}else if(nivel_de_acceso >= 5 && nivel_de_acceso <= 6) {
+    console.log("Usted tiene un nivel de acceso de Gerente");
+}else if(nivel_de_acceso >= 3 && nivel_de_acceso <= 4){
+    console.log("Usted tiene un nivel de acceso de supervisor");
+}else if(nivel_de_acceso >= 1 && nivel_de_acceso <= 2){
+    console.log("Usted tiene u nivel de acceso de empleado");
+} else {
+    console.log("Usted tiene un nivel de visitante");
+}
+
+// 3. Una app de fitness clasifica pasos diarios: Sedentario (menos de 5000), Poco activo (5000-7499), Moderadamente activo (7500-9999), Activo (10000-12499), Muy activo (12500+).
+let pasos_diarios= 7600;
+if(pasos_diarios >= 12500) {
+    console.log("Muy activo");
+} else if(pasos_diarios >= 10000 && pasos_diarios <= 12499){
+    console.log("Activo");
+} else if(pasos_diarios >= 7500 && pasos_diarios <= 9999){
+    console.log("Moderadamente activo");
+} else if(pasos_diarios >= 5000 && pasos_diarios <= 7499){
+    console.log("Poco activo");
+} else if(pasos_diarios <5000){
+    console.log("Sedentario");
+}
+
+// 4. Un cine cobra según la hora: Matinée $50 (antes de 14:00), Tarde $80 (14:00-17:59), Noche $120 (18:00-21:59), Trasnoche $90 (22:00 en adelante).
+let hora_cine =  "14:00";
+if(hora_cine >= "22:00"){
+    console.log("El horario se considera Trasnoche y por lo tanto el costo es de $90");
+}else if(hora_cine >= "18:00" && hora_cine <= "21:59"){
+    console.log("El horario se considera Noche y por lo tanto el costo es de $120");
+}else if(hora_cine >= "14:00" && hora_cine <= "17:59"){
+    console.log("El horario se considera Tarde y por lo tanto el costo es de $80");
+}else if(hora_cine < "14:00"){
+    console.log("El horario se considera Matutino y por lo tanto el costo es de $50");
+}
+
+// 5. Una biblioteca cobra multas por día de retraso: $0 (0 días), $10 (1-3 días), $25 (4-7 días), $50 (8-14 días), $100 (15+ días).
+let dias_de_retraso = 5;
+if(dias_de_retraso >= 15){
+    console.log("El costo de la multa es de $100");
+}else if(dias_de_retraso >= 8 && dias_de_retraso <= 14){
+    console.log("El costo de la multa es de $50");
+}else if(dias_de_retraso >= 4 && dias_de_retraso <= 7){
+    console.log("El costo de la multa es de $25");
+}else if(dias_de_retraso >= 1 && dias_de_retraso <=3){
+    console.log("El costo de la multa es de $10");
+}else {
+    console.log("El costo de la multa es de $0 ");
+}
+
+// 6. Un termómetro clasifica fiebre en humanos: Normal (35-37°C), Febrícula (37.1-38°C), Fiebre moderada (38.1-39°C), Fiebre alta (39.1-40°C), Hipertermia (40.1+°C).
+let fiebre_humanos = 36;
+if(fiebre_humanos >= 40.1){
+    console.log("Hipertemia");
+}else if(fiebre_humanos >= 39.1 && fiebre_humanos <= 40){
+    console.log("Fiebre Alta");
+}else if(fiebre_humanos >= 38.1 && fiebre_humanos <= 39){
+    console.log("Fiebre Moderada");
+}else if(fiebre_humanos >= 37.1 && fiebre_humanos <= 38){
+    console.log("Febrícula");
+}else if(fiebre_humanos >= 35 && fiebre_humanos <= 37){
+    console.log("Normal");
+}
+
+// 7. Una app de idiomas clasifica nivel: A1 Principiante (0-20 puntos), A2 Elemental (21-40), B1 Intermedio (41-60), B2 Intermedio-alto (61-80), C1 Avanzado (81-95), C2 Maestría (96-100).
+let nivel_idioma = 16;
+if(nivel_idioma >= 96 && nivel_idioma <= 100){
+    console.log("Tienes un nivel C2 correspondiente a Maestría");
+}else if(nivel_idioma >= 81 && nivel_idioma <= 95){
+    console.log("Tienes un nivel C1 correspondiente Avanzado");
+}else if(nivel_idioma >= 61 && nivel_idioma <= 80){
+    console.log("Tienes un nivel B2 correspondiente a Intermedio-Alto");
+}else if(nivel_idioma >= 41 && nivel_idioma <= 60){
+    console.log("Tienes un nivel B1 correspondiente a Intermedio");
+}else if(nivel_idioma >= 21 && nivel_idioma <= 40){
+    console.log("Tienes un nivel A2 correspondiente a Elemental");
+}else if(nivel_idioma <= 20){
+    console.log("Tienes un nivel A1 correspondiente a Principiante");
+}
+
+// 8. Un restaurante clasifica reservas por tamaño de grupo: Individual (1 persona), Pareja (2), Pequeño (3-4), Mediano (5-8), Grande (9-15), Evento (16+).
+let tamaño_grupo = 1;
+if(tamaño_grupo >= 16){
+    console.log("La reserva corresponde a un Evento");
+}else if(tamaño_grupo >= 9 && tamaño_grupo <= 15){
+    console.log("La reserva corresponde a Grande");
+}else if(tamaño_grupo >=5 && tamaño_grupo <=8){
+    console.log("La reserva corresponde a Mediano");
+}else if(tamaño_grupo >=3 && tamaño_grupo <=4) {
+    console.log("La reserva corresponde a un Pequeño");
+}else if(tamaño_grupo == 2){
+    console.log("La reserva corresponde a Pareja");
+}else if(tamaño_grupo == 1){
+    console.log("La reserva corresponde a Individual");
+}
+
+// 9. Una plataforma de streaming cobra según región: Zona A $99, Zona B $149, Zona C $199, Zona D $249.
+let region = "Zona B";
+if(region == "Zona D"){
+    console.log("El costo del streaming es $249");
+}else if(region == "Zona C"){
+    console.log("El costo del streaming es de $199");
+}else if(region == "Zona B"){
+    console.log("El costo del streaming es de $149");
+}else if(region == "Zona A"){
+    console.log("El costo del streaming es $99");
+}
+
+// 10. Un sistema de riego clasifica humedad del suelo: Seco crítico (0-10%), Seco (11-30%), Óptimo (31-60%), Húmedo (61-80%), Saturado (81-100%).
+let humedad_suelo = 5;
+if(humedad_suelo >= 81 && humedad_suelo <= 100){
+    console.log("Saturado");
+}else if(humedad_suelo >= 61 && humedad_suelo <= 80){
+    console.log("Húmedo");
+}else if(humedad_suelo >= 31 && humedad_suelo <= 60){
+    console.log("Óptimo");
+}else if(humedad_suelo >= 11 && humedad_suelo <= 30){
+    console.log("Seco");
+}else if(humedad_suelo <= 10){
+    console.log("Seco crítico")
 }
