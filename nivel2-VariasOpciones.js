@@ -101,7 +101,7 @@ switch (mes) {
         console.log("Marzo");
         break;
     case 4:
-        console.log("Abril"); 
+        console.log("Abril");
         break;
     case 5:
         console.log("Mayo");
@@ -445,5 +445,5 @@ if(humedad_suelo >= 81 && humedad_suelo <= 100){
 }else if(humedad_suelo >= 11 && humedad_suelo <= 30){
     console.log("Seco");
 }else if(humedad_suelo <= 10){
-    console.log("Seco crítico")
+    console.log("Seco crítico");
 }
